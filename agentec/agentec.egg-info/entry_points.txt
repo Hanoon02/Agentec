@@ -1,0 +1,2 @@
+[console_scripts]
+agentec = agentec.cli:main

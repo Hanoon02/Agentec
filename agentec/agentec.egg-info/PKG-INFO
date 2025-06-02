@@ -1,0 +1,125 @@
+Metadata-Version: 2.4
+Name: agentec
+Version: 0.1.0
+Summary: Generate Markdown-based agent tasks from NLP prompts with optional OpenAI enhancement.
+Home-page: https://github.com/ahmedhanoon/agentec
+Author: Ahmed Hanoon
+Author-email: ahmedhanoon02@gmail.com
+Keywords: ai,tasks,markdown,openai,cli,automation
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typer>=0.9.0
+Requires-Dist: requests>=2.25.0
+Requires-Dist: python-dotenv>=0.19.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Agentec
+
+Generate Markdown-based agent tasks from NLP prompts with optional OpenAI enhancement.
+
+## Installation
+
+```bash
+pip install agentec
+```
+
+## Usage
+
+### Basic Usage
+```bash
+agentec "Summarize product reviews"
+```
+
+### With OpenAI Enhancement
+Set your OpenAI API key for enhanced task descriptions:
+
+```bash
+export OPENAI_API_KEY="your-api-key-here"
+agentec "Create a data analysis pipeline"
+```
+
+Or add it to a `.env` file in your current directory:
+```
+OPENAI_API_KEY=your-api-key-here
+```
+
+## Features
+
+- **Generate structured task files** from natural language prompts
+- **Optional OpenAI integration** for enhanced, detailed task descriptions
+- **Saves tasks in Markdown format** in your current directory under `tasks/`
+- **Cross-platform compatibility** - works on Windows, macOS, and Linux
+- **Simple CLI interface** - just provide your prompt and go
+
+## Example Output
+
+### Basic Task (without OpenAI)
+```markdown
+# Task: summarize_product_reviews
+
+## Prompt
+Summarize product reviews
+```
+
+### Enhanced Task (with OpenAI)
+```markdown
+# Task: summarize_product_reviews
+
+## Prompt
+Summarize product reviews
+
+## Enhanced Task Description
+### Overview
+This task involves analyzing and summarizing product reviews to extract key insights...
+
+### Objectives
+- Extract key themes from customer feedback
+- Identify common complaints and praise
+- Provide actionable insights for product improvement
+
+### Steps/Requirements
+1. Collect product reviews from various sources
+2. Clean and preprocess the review data
+3. Apply sentiment analysis
+...
+```
+
+## Requirements
+
+- Python 3.7+
+- Optional: OpenAI API key for enhanced task generation
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Author
+
+Ahmed Hanoon - [ahmedhanoon02@gmail.com](mailto:ahmedhanoon02@gmail.com)

@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+agentec/__init__.py
+agentec/cli.py
+agentec/core.py
+agentec.egg-info/PKG-INFO
+agentec.egg-info/SOURCES.txt
+agentec.egg-info/dependency_links.txt
+agentec.egg-info/entry_points.txt
+agentec.egg-info/requires.txt
+agentec.egg-info/top_level.txt
